@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chop Deck</title>
+
+    <style>
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 10px);
+        padding: 10px;
+        background-color: #f7f7f7;
+        font-family: Satoshi, sans-serif;
+      }
+
+      .logo-section {
+        width: 200px;
+      }
+
+      .icon-section img {
+        width: 55px;
+      }
+
+      .icon-section:hover {
+        color: white !important;
+      }
+      .contact-parent-div button {
+        width: 200px;
+      }
+
+      .button {
+        width: 20%;
+        background-color: rgb(9, 96, 147);
+        color: white;
+        border-radius: 40px;
+        padding: 15px;
+      }
+
+      .hero-section,
+      .our-process {
+        padding-top: 30px;
+        font-size: 30px;
+        text-align: center;
+        font-family: Satoshi, sans-serif;
+        font-weight: 700;
+      }
+
+      .subhero-section,
+      .our-process-cont {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-family: Satoshi, sans-serif;
+        color: grey;
+        font-size: 20px;
+        font-weight:300;
+      }
+
+      li {
+        display: inline-block; /* Changed from 'flex' to 'inline-block' for centering */
+      }
+
+      .nav-links-div {
+        width: 100%; /* Allow the navbar to take full width */
+        text-align: center; /* Centers the navigation items */
+      }
+
+      .nav-links-div ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-links-div ul li a {
+        color: rgb(109 109 109);
+        font-family: Satoshi, sans-serif;
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+      }
+
+      .nav-links-div ul li a:hover {
+        color: #0077cc;
+      }
+      .textcontent {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 10px; */
+        padding: 10px;
+      }
+
+      .contenttext {
+        border: 3px dashed rgb(128, 128, 128, 0.3);
+        max-width: 48%;
+        width: 48%;
+        padding: 30px;
+        text-align: left;
+        border-radius: 20px;
+        /* line-height: 3rem; */
+        font-family: Satoshi, sans-serif;
+        transition: background-color 0.3s ease;
+        margin: 1%;
+        color: grey;
+      }
+      .contenttext:hover {
+        background-color: black;
+        color: white !important;
+      }
+
+      .contenttext:hover #img-discovery {
+        content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FDiscovery.gif&w=96&q=75);
+      }
+
+      .contenttext:hover #img-discovery2 {
+        content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FDesign.gif&w=96&q=75);
+      }
+
+      .contenttext:hover #img-discovery3 {
+        content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FRectangle.gif&w=96&q=75);
+      }
+
+      .contenttext:hover #img-discovery4 {
+        content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2Foptimization.gif&w=96&q=75);
+      }
+
+
+      .boldh3 {
+        font-size: 20px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        padding-top: 15px;
+        color: black;
+      }
+
+      .boldh5 {
+        font-weight: 100;
+        color:inherit;
+        font-family: Satoshi, sans-serif;
+        line-height: 2rem;
+        font-size: 18px;
+        padding-top: 15px;
+      }
+
+      .contenttext:hover .boldh3 {
+        color: white;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <div class="logo-section">
+        <img
+          src="https://www.phliptechlabs.com/images/Logo.svg"
+          alt="Chop Deck Logo"
+        />
+      </div>
+
+      <div class="nav-links-div">
+        <ul>
+          <li><a href="Home">Home</a></li>
+          <li><a href="Services">Services</a></li>
+          <li><a href="Success Stories">Success Stories</a></li>
+          <li><a href="About Us">About Us</a></li>
+          <li><a href="Startup Studio">Startup Studio</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-parent-div">
+        <button class="button">Contact Us</button>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <br />
+
+    <div class="hero-section">
+      Tailored Technology Solutions for <br />
+      Every Entrepreneur Needs
+    </div>
+
+    <br/>
+
+    <div class="subhero-section">
+      We help ambitious leaders and entrepreneurs turn their vision into
+      <br />
+      reality with innovative software solutions that drive growth.
+    </div>
+
+    <div class="our-process">Our Process </div>
+
+    <div class="our-process-cont">How we turn tech vision into reality</div>
+
+    <div class="textcontent">
+      <div class="contenttext">
+        <div class="icon-section">
+          <img id="img-discovery"
+            src="https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FdiscoverIcon.gif&w=96&q=75"
+            alt="Discovery"
+          />
+        </div>
+
+        <div class="boldh3">Discovery 🔎 & Strategy 💡 </div>
+        <div class="boldh5">
+          We use data-driven insights to create a roadmap that aligns technology
+          with your business goals.
+        </div>
+      </div>
+      <div class="contenttext">
+        <div class="icon-section">
+          <img id="img-discovery2"
+            src="https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2Flaptop-programming.gif&w=96&q=75"
+            alt="Discovery"
+          />
+        </div>
+        <div class="boldh3">Design 🎨 & Development 💻 </div>
+        <div class="boldh5">
+          We craft tailored solutions that integrate seamlessly with your
+          existing systems, enhancing efficiency and streamlining processes.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="textcontent">
+      <div class="contenttext">
+        <div class="icon-section">
+          <img id="img-discovery3"
+            src="https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2Fcomputer-protection.gif&w=96&q=75"
+            alt="Discovery"
+          />
+        </div>
+
+        <div class="boldh3">Launch 🎯 & Ongoing Support ⏳ </div>
+        <div class="boldh5">
+          We manage a smooth deployment and provide ongoing support for continuous improvement.
+        </div>
+      </div>
+      <div class="contenttext">
+        <div class="icon-section">
+          <img id="img-discovery4"
+            src="https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FrocketIcon.gif&w=96&q=75"
+            alt="Discovery"
+          />
+        </div>
+        <div class="boldh3">Testing 📱 & Optimization 🕖</div>
+        <div class="boldh5">
+          Our rigorous testing and optimization ensure high performance and scalability.
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
