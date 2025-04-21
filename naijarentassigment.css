@@ -1,0 +1,312 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-Screen Layout */
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+/* Main Container - Fullscreen */
+.container {
+  display: flex;
+  width: 100%; /* Prevent horizontal scrolling */
+  height: 100vh; /* Full height */
+}
+
+/* Left Section - 70% of screen */
+.left-section h2 {
+  font-size: 56px;
+  padding-bottom: 40px;
+}
+
+.left-section {
+  width: 70%;
+  height: 100%;
+  padding: 100px;
+  background: rgba(33, 78, 37, 0.8); /*Solid Green Background with transparancy*/
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; /* This is important for the pseudo-element positioning */
+  overflow: hidden;
+}
+
+.left-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("onboarding-bg.png");
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  z-index: -1;
+}
+
+.logo img {
+
+  /* z-index: 2; */
+  padding-bottom: 60px;
+  padding-top: 30px;
+  max-width: 220px;
+}
+
+.description {
+  font-size: 20px;
+  margin: 20px 0;
+  position: relative;
+  padding-bottom: 0px;
+  line-height: 35px;
+}
+
+/* Testimonial Box */
+.testimonial {
+  background: rgba(116, 193, 27, 0.4);
+
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 30px;
+  position: relative;
+  max-width: 580px;
+  line-height: 25px;
+
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-width: 10px;
+  border-color: red;
+  border: 10px;
+  margin-right: 15px;
+}
+
+.ratings {
+  color: #f0da0d;
+  background-color: red;
+}
+
+/* Right Section - 50% of screen */
+.right-section {
+  width: 50%;
+  height: 100%;
+  padding: 80px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.right-section h2 {
+  margin-bottom: 15px;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.subtext {
+  font-size: 18px;
+  color: gray;
+  line-height: 35px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+label {
+  font-weight: lighter;
+  margin-top: 25px;
+  line-height: 15px;
+  color:grey;
+}
+
+input {
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  line-height: 35px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.remember-me label {
+  margin-left: 5px;
+}
+
+.login-btn {
+  background: #2e6133;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background: #5ee072;
+  color: black;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: #9b9b9b;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.google-btn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.create-account a {
+  text-decoration: none;
+  color: #2e6133;
+  font-weight: bold;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+    height: 50%;
+  }
+  .left-section {
+    padding: 30px;
+  }
+  .right-section {
+    padding: 30px;
+  }
+}
+
+/* Input container to position the icon */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Style the icon */
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.5rem 2rem; /* Add space for icons */
+  font-size: 1rem;
+}
+
+.fa-envelope {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(189, 189, 189, 0.885);
+  font-size: 18px;
+}
+
+.left-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(189, 189, 189, 0.885);
+  font-size: 18px;
+}
+
+.right-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(189, 189, 189, 0.885);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Style the input */
+.input-container input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Extra left padding for the icon */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Style focus effect */
+.input-container input:focus {
+  border-color: #2e6133;
+  outline: none;
+}
+
+
+/* Style the wrapper */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Style the checkbox */
+.remember-me input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius:90%; /* Rounded edges */
+  accent-color:  #5ee072; /* Change this to match your theme */
+  cursor: pointer;
+
+}
+
+/* Optional: Style the label */
+.remember-me label {
+  cursor: pointer;
+  margin-top: 1%;
+}

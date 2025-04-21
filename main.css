@@ -1,0 +1,281 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 10px);
+  padding: 10px;
+  background-color: #f7f7f7;
+  font-family: Satoshi, sans-serif;
+}
+
+.logo-section {
+  width: 200px;
+}
+
+.icon-section img {
+  width: 55px;
+}
+
+.icon-section:hover {
+  color: white !important;
+}
+.contact-parent-div button {
+  width: 200px;
+}
+
+.button {
+  width: 20%;
+  background-color: rgb(9, 96, 147);
+  color: white;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+.button:hover {
+  background-color: rgb(133, 179, 206);
+  color: rgb(45, 45, 45);
+}
+.hero-section,
+.our-process {
+  padding-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  font-family: Satoshi, sans-serif;
+  font-weight: 700;
+}
+
+.subhero-section,
+.our-process-cont {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: Satoshi, sans-serif;
+  color: grey;
+  font-size: 20px;
+  font-weight:300;
+}
+
+li {
+  display: inline-block;
+}
+
+.nav-links-div {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links-div ul li a {
+  color: rgb(109 109 109);
+  font-family: Satoshi, sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav-links-div ul li a:hover {
+  color: #0077cc;
+}
+.textcontent {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+  padding: 10px;
+}
+
+.contenttext {
+  border: 3px dashed rgb(128, 128, 128, 0.3);
+  max-width: 48%;
+  width: 48%;
+  padding: 30px;
+  text-align: left;
+  border-radius: 20px;
+  /* line-height: 3rem; */
+  font-family: Satoshi, sans-serif;
+  transition: background-color 0.3s ease;
+  margin: 1%;
+  color: grey;
+}
+.contenttext:hover {
+  background-color: black;
+  color: white !important;
+}
+
+.contenttext:hover #img-discovery {
+  content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FDiscovery.gif&w=96&q=75);
+}
+
+.contenttext:hover #img-discovery2 {
+  content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FDesign.gif&w=96&q=75);
+}
+
+.contenttext:hover #img-discovery3 {
+  content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2FRectangle.gif&w=96&q=75);
+}
+
+.contenttext:hover #img-discovery4 {
+  content: url(https://www.phliptechlabs.com/_next/image?url=%2Fimages%2FourProcessIcons%2Foptimization.gif&w=96&q=75);
+}
+
+
+.boldh3 {
+  font-size: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  padding-top: 15px;
+  color: black;
+}
+
+.boldh5 {
+  font-weight: 100;
+  color:inherit;
+  font-family: Satoshi, sans-serif;
+  line-height: 2rem;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.contenttext:hover .boldh3 {
+  color: white;
+}
+
+
+
+/* Forms CSS */
+
+
+body{
+  font-family: sans-serif;
+  padding: 50px;
+}
+
+.label-wrapper{
+  padding-bottom: 10px;
+}
+
+
+label{
+  color: rgb(91, 66, 66);
+  font-size: 16px;
+}
+
+
+input{
+  padding: 15px;
+  width: 470px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+
+.form-input-wrapper{
+ margin-bottom: 30px;
+}
+
+
+.btn-wrapper {
+  display: flex;
+  width: 500px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+#paragraph2 {
+  display: none;
+}
+
+#form {
+  display: none;
+}
+
+.btn-signup {
+  background-color: rgb(107, 176, 107);
+  color: whitesmoke;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  width: 240px;
+}
+
+.loginbody::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://miro.medium.com/v2/resize:fit:2000/format:webp/1*sLVGiSZq0LPkYwhdvA45tA.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(15px);
+  z-index: -1;
+}
+
+.loginbody {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.form-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-input-wrapper input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-signup {
+  margin-top: 20px;
+  width: 100%;
+  }
+
+
+
+
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-submit {
+  background-color: rgb(107, 176, 107);
+  color: white;
+ border: none;
+  height: 50px;
+  border-radius: 10px;
+  width: 240px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn-reset {
+  background-color: rgb(245, 234, 146);
+  color: rgb(47, 45, 45);
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  width: 240px;
+  flex-grow: 1;
+  text-align: center;
+}

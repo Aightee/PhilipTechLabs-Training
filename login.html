@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/main.css" type="text/css" />
+    <title>Chop Deck</title>
+  </head>
+
+  <body class="loginbody">
+    <div class="form-wrapper">
+      <form id="form">
+        <div class="form-input-wrapper">
+          <div class="label-wrapper">
+            <label>User Name</label>
+          </div>
+          <input type="text" placeholder="Start typing..." />
+        </div>
+        <div class="form-input-wrapper">
+          <div class="label-wrapper">
+            <label>Password</label>
+          </div>
+          <input type="password" placeholder="Start typing..." required="true" />
+        </div>
+
+        <div class="btn-wrapper">
+          <button class="btn-submit" type="submit">Submit</button>
+          <button class="btn-reset" type="reset">Reset Form</button>
+        </div>
+      </form>
+
+      <div>
+        <button class="btn-signup" id="signup" onclick="toggledisplay()">
+          Click to Sign Up
+        </button>
+      </div>
+    </div>
+
+
+  </body>
+
+  <script>
+    function toggledisplay() {
+      if (document.getElementById("form").style.display === "none") {
+        document.getElementById("form").style.display = "block";
+      } else {
+        document.getElementById("form").style.display = "none";
+      }
+    }
+  </script>
+</html>
